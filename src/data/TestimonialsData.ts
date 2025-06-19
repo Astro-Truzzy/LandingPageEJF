@@ -5,42 +5,42 @@ export const charityTestimonials = [
   {
     id: 1,
     imageUrl:
-      "../../public/Charity/IMG-20250619-WA0089.jpg",
+      "/Charity/IMG-20250619-WA0089.jpg",
     title: "Starting Out",
     description: "Charity begins her journey",
   },
   {
     id: 2,
     imageUrl:
-      "../../public/Charity/IMG-20250619-WA0088.jpg",
+      "/Charity/IMG-20250619-WA0088.jpg",
     title: "Learning Phase",
     description: "First steps into the business",
   },
   {
     id: 3,
     imageUrl:
-      "../../public/Charity/IMG-20250619-WA0091.jpg",
+      "/Charity/IMG-20250619-WA0091.jpg",
     title: "Growth Period",
     description: "Building momentum",
   },
   {
     id: 4,
     imageUrl:
-      "../../public/Charity/IMG-20250619-WA0092.jpg",
+      "/Charity/IMG-20250619-WA0092.jpg",
     title: "Breakthrough",
     description: "First major success",
   },
   {
     id: 5,
     imageUrl:
-      "../../public/Charity/IMG-20250619-WA0093.jpg",
+      "/Charity/IMG-20250619-WA0093.jpg",
     title: "Scaling Up",
     description: "Expanding the business",
   },
   {
     id: 6,
     imageUrl:
-      "../../public/Charity/IMG-20250619-WA0094.jpg",
+      "/Charity/IMG-20250619-WA0094.jpg",
     title: "Success Milestone",
     description: "Achieving major goals",
   },
@@ -54,28 +54,28 @@ export const charityTestimonials = [
   {
     id: 8,
     imageUrl:
-      "../../public/Charity/IMG-20250619-WA0096.jpg",
+      "/Charity/IMG-20250619-WA0096.jpg",
     title: "Current Success",
     description: "Living the dream",
   },
   {
     id: 9,
     imageUrl:
-      "../../public/Charity/IMG-20250619-WA0097.jpg",
+      "/Charity/IMG-20250619-WA0097.jpg",
     title: "Current Success",
     description: "Living the dream",
   },
   {
     id: 10,
     imageUrl:
-      "../../public/Charity/IMG-20250619-WA0098.jpg",
+      "/Charity/IMG-20250619-WA0098.jpg",
     title: "Current Success",
     description: "Living the dream",
   },
   {
     id: 11,
     imageUrl:
-      "../../public/Charity/WhatsApp Image 2025-06-19 at 17.52.56_c92e23de.jpg",
+      "/Charity/WhatsApp Image 2025-06-19 at 17.52.56_c92e23de.jpg",
     title: "Current Success",
     description: "Living the dream",
   },
@@ -86,28 +86,28 @@ export const arinzeTestimonials = [
   {
     id: 1,
     imageUrl:
-      "/public/Arinze/IMG-20250619-WA0102.jpg",
+      "/Arinze/IMG-20250619-WA0102.jpg",
     title: "Phase 1",
     description: "Foundation building",
   },
   {
     id: 2,
     imageUrl:
-      "/public/Arinze/IMG-20250619-WA0103.jpg",
+      "/Arinze/IMG-20250619-WA0103.jpg",
     title: "Phase 2",
     description: "Strategy implementation",
   },
   {
     id: 3,
     imageUrl:
-      "/public/Arinze/IMG-20250619-WA0104.jpg",
+      "/Arinze/IMG-20250619-WA0104.jpg",
     title: "Phase 3",
     description: "Rapid growth",
   },
   {
     id: 4,
     imageUrl:
-      "../../public/Arinze/IMG-20250619-WA0105.jpg",
+      "/Arinze/IMG-20250619-WA0105.jpg",
     title: "Phase 4",
     description: "Scaling success",
   },
@@ -125,35 +125,35 @@ export const generalTestimonials = [
   {
     id: 1,
     imageUrl:
-      "/public/Faith/WhatsApp Image 2025-06-19 at 19.00.06_234116cb.jpg",
+      "/Faith/WhatsApp Image 2025-06-19 at 19.00.06_234116cb.jpg",
     name: "",
     achievement: "$50K in 3 months",
   },
   {
     id: 2,
     imageUrl:
-      "/public/Others/WhatsApp Image 2025-06-19 at 17.52.57_9a88b9fb.jpg",
+      "/Others/WhatsApp Image 2025-06-19 at 17.52.57_9a88b9fb.jpg",
     name: "",
     achievement: "6-figure breakthrough",
   },
   {
     id: 3,
     imageUrl:
-      "/public/Others/WhatsApp Image 2025-06-19 at 19.00.07_287064ae.jpg",
+      "/Others/WhatsApp Image 2025-06-19 at 19.00.07_287064ae.jpg",
     name: "",
     achievement: "Passive income success",
   },
   {
     id: 4,
     imageUrl:
-      "/public/Others/WhatsApp Image 2025-06-19 at 19.00.58_6d8bf83f.jpg",
+      "/Others/WhatsApp Image 2025-06-19 at 19.00.58_6d8bf83f.jpg",
     name: "",
     achievement: "Business automation",
   },
   {
     id: 5,
     imageUrl:
-      "/public/Others/WhatsApp Image 2025-06-19 at 19.01.29_0c141c8e.jpg",
+      "/Others/WhatsApp Image 2025-06-19 at 19.01.29_0c141c8e.jpg",
     name: "",
     achievement: "Multiple income streams",
   },
@@ -205,9 +205,9 @@ export const videoTestimonials = [
   {
     id: 3,
     thumbnailUrl:
-      "/public/transPic.png",
+      "/transPic.png",
     videoUrl:
-      "/public/TransVid.mp4",
+      "/TransVid.mp4",
     title: "Transactions",
     duration: "0:47",
     description: "Student to successful businesswoman",
@@ -215,7 +215,7 @@ export const videoTestimonials = [
   {
     id: 4,
     thumbnailUrl:
-      "/public/CoachJulia.png",
+      "/CoachJulia.png",
     videoUrl:
       "../../public/CoachVid.mp4",
     title: "Transactions",
