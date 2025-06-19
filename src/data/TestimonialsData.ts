@@ -126,35 +126,35 @@ export const generalTestimonials = [
     id: 1,
     imageUrl:
       "/public/Faith/WhatsApp Image 2025-06-19 at 19.00.06_234116cb.jpg",
-    name: "Sarah Johnson",
+    name: "",
     achievement: "$50K in 3 months",
   },
   {
     id: 2,
     imageUrl:
       "/public/Others/WhatsApp Image 2025-06-19 at 17.52.57_9a88b9fb.jpg",
-    name: "Mike Chen",
+    name: "",
     achievement: "6-figure breakthrough",
   },
   {
     id: 3,
     imageUrl:
       "/public/Others/WhatsApp Image 2025-06-19 at 19.00.07_287064ae.jpg",
-    name: "Emma Wilson",
+    name: "",
     achievement: "Passive income success",
   },
   {
     id: 4,
     imageUrl:
       "/public/Others/WhatsApp Image 2025-06-19 at 19.00.58_6d8bf83f.jpg",
-    name: "David Rodriguez",
+    name: "",
     achievement: "Business automation",
   },
   {
     id: 5,
     imageUrl:
       "/public/Others/WhatsApp Image 2025-06-19 at 19.01.29_0c141c8e.jpg",
-    name: "Lisa Park",
+    name: "",
     achievement: "Multiple income streams",
   },
   // {
