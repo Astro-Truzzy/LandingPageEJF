@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+html,
+body {
+  width: 100dvw;
+  overflow-x: hidden;
+  color: black;
+  scroll-behavior: smooth;
+  font-family: "Mona Sans", sans-serif;
+}
+
+section {
+  width: 100dvw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cta {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.sparkling-gold {
+  background: linear-gradient(90deg, #f9d423, #ffdd00, #fbb034);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  animation: glow 3s ease-in-out infinite;
+}
+
+.sparkling-gold::after {
+  content: "✨";
+  position: absolute;
+  right: -1.2rem;
+  top: -0.3rem;
+  animation: sparkle 2s ease-in-out infinite;
+  width: 3.5rem;
+  height: 2.5rem;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: 0 0 10px #f9d423, 0 0 20px #ffdd00, 0 0 30px #fbb034;
+  }
+
+  50% {
+    text-shadow: 0 0 20px #ffdd00, 0 0 40px #fbb034, 0 0 60px #ffd700;
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.4) rotate(15deg);
+    opacity: 0.7;
+  }
+}
+
+.gritty-grass {
+  position: relative;
+  color: #668762;
+  font-weight: 600;
+  text-shadow: 0 1px 0 #79bd97;
+  background: linear-gradient(to right, #647c64, #4a594a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: grayscale(0.6);
+  opacity: 0.85;
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 1.4s infinite ease-in-out;
+}
+
+.h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 2rem;
+  text-shadow: #60310b 3px 4px 2px;
+  color: white;
+  text-align: center;
+  font-family: "Mona Sans", sans-serif;
+}
+
+.p4 {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 2rem;
+  text-shadow: #60310b 3px 4px 2px;
+  color: white;
+  font-family: "Mona Sans", sans-serif;
+}
