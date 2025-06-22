@@ -218,28 +218,23 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* Newsletter Signup */}
-                {/* <div className="mt-8 p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl">
-                  <h5 className="text-white font-semibold mb-3">
-                    Stay Updated
+                <div className="mt-8 p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl">
+                  <h5 className="text-white font-semibold mb-3 uppercase leading-tight tracking-wider">
+                    Disclaimer
                   </h5>
                   <p className="text-gray-400 text-sm mb-4">
-                    Get the latest success tips and exclusive offers.
+                    DISCLAIMER This site is not a part of a Facebook Website or
+                    FACEBOOK INC. Additionally, this site is not endorsed by
+                    Facebook in ANYWAY. Facebook is a trademark of FACEBOOK INC.
+                    *Earnings and income representations made by ESOSA
+                    JOHN and his Affiliates are aspirational statements only
+                    of your earnings potential. These results are not typical
+                    and results will vary. This is not a Get-rich-quick program
+                    nor do we believe in overnight success. We believe in
+                    hardwork, integrity and developing your skills if you want
+                    to earn more financially.
                   </p>
-                  <div className="flex space-x-2">
-                    <input
-                      type="email"
-                      placeholder="Enter your email"
-                      className="flex-1 px-4 py-2 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-amber-400/50 transition-colors duration-300"
-                    />
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="px-4 py-2 bg-gradient-to-r from-amber-500 to-orange-600 rounded-lg text-white font-medium shadow-lg hover:shadow-amber-500/25 transition-all duration-300"
-                    >
-                      Subscribe
-                    </motion.button>
-                  </div>
-                </div> */}
+                </div>
               </motion.div>
             </div>
           </div>

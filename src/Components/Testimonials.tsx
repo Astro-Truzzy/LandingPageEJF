@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, Play, X } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, X, Check } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {
@@ -8,12 +8,14 @@ import {
   charityTestimonials,
   arinzeTestimonials,
   videoTestimonials,
+  mentorshipImages,
+  qualificationCriteria
 } from "../data/TestimonialsData";
 
 
 
 const Testimonials: React.FC = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide] = useState(0);
   const [charitySlide, setCharitySlide] = useState(0);
   const [videoSlide, setVideoSlide] = useState(0);
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -52,19 +54,19 @@ const Testimonials: React.FC = () => {
   };
 
   // Carousel navigation functions
-  const nextSlide = () => {
-    setCurrentSlide(
-      (prev) => (prev + 1) % Math.ceil(generalTestimonials.length / 4)
-    );
-  };
+  // const nextSlide = () => {
+  //   setCurrentSlide(
+  //     (prev) => (prev + 1) % Math.ceil(generalTestimonials.length / 4)
+  //   );
+  // };
 
-  const prevSlide = () => {
-    setCurrentSlide(
-      (prev) =>
-        (prev - 1 + Math.ceil(generalTestimonials.length / 4)) %
-        Math.ceil(generalTestimonials.length / 4)
-    );
-  };
+  // const prevSlide = () => {
+  //   setCurrentSlide(
+  //     (prev) =>
+  //       (prev - 1 + Math.ceil(generalTestimonials.length / 4)) %
+  //       Math.ceil(generalTestimonials.length / 4)
+  //   );
+  // };
 
   const nextCharitySlide = () => {
     setCharitySlide(
@@ -106,7 +108,7 @@ const Testimonials: React.FC = () => {
 
   return (
     <section
-      className="relative py-20 bg-gradient-to-b from-slate-900 to-slate-800 overflow-hidden"
+      className="relative py-20 bg-gradient-to-br from-blue-900 via-blue-900 to-slate-900 overflow-hidden"
       id="testimonials"
     >
       {/* Background Pattern */}
@@ -130,20 +132,27 @@ const Testimonials: React.FC = () => {
           >
             Real People, Real Results
           </motion.h2>
+          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+            Dear Friend,
+          </p>
+          <br />
           <motion.p
             variants={itemVariants}
             className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed"
           >
-            Imagine being handed the exact blueprint that over{" "}
+            What if I hand you the exact same information over{" "}
             <span className="font-bold text-amber-400 px-2 py-1 rounded-lg bg-amber-400/10 border border-amber-400/20">
               1,200 of my mentees
             </span>{" "}
-            used to turn ambition into consistent{" "}
+            have used to crush{" "}
             <span className="font-bold text-green-400 px-2 py-1 rounded-lg bg-green-400/10 border border-green-400/20">
-              6–7 figure results
+              hundreds of thousands and even millions.
             </span>
-            . People like Charity started with nothing but belief — and built
-            something extraordinary.
+            for themselves like{" "}
+            <span className="font-bold text-blue-200 px-2 py-1 rounded-lg bg-green-400/10 border border-green-400/20">
+              {" "}
+              Mrs Charity.
+            </span>
           </motion.p>
         </motion.div>
 
@@ -241,6 +250,25 @@ const Testimonials: React.FC = () => {
           >
             Arinze's Success Journey
           </motion.h3>
+          <div className="text-center mb-10">
+            <motion.p
+              variants={itemVariants}
+              className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed"
+            >
+              He was already an Affiliate who signed up under someone else but{" "}
+              <span className="font-extrabold">
+                he was not making any money
+              </span>
+              <span className="font-bold text-amber-400 px-2 py-1 rounded-lg bg-amber-400/10 border border-amber-400/20">
+                until he learned from me
+              </span>{" "}
+              and{" "}
+              <span className="font-bold text-green-400 px-2 py-1 rounded-lg bg-green-400/10 border border-green-400/20">
+                started using my unique strategy.
+              </span>
+            </motion.p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
             {arinzeTestimonials.map((testimonial, index) => (
               <motion.div
@@ -271,6 +299,26 @@ const Testimonials: React.FC = () => {
             ))}
           </div>
         </motion.div>
+        <div className="flex items-center justify-center mb-16">
+          <motion.button
+            variants={itemVariants}
+            whileHover={{ scale: 1.05, y: -3 }}
+            whileTap={{ scale: 0.95 }}
+            className="group relative px-12 py-6 bg-[#000080] rounded-2xl text-white font-bold text-xl shadow-2xl hover:shadow-amber-500/25 transition-all duration-300 overflow-hidden"
+          >
+            <span className="relative z-10">
+              <a 
+              href="https://chat.whatsapp.com/FAiB0gvbrloAEmX7NmsvNI"
+              rel="noopener noreferrer"
+              target="_blank"
+              >
+                Join The Training Here
+              </a>
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+          </motion.button>
+        </div>
 
         {/* Second Intro Text */}
         <motion.div
@@ -286,14 +334,16 @@ const Testimonials: React.FC = () => {
             variants={itemVariants}
             className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed"
           >
-            For the past two years, I've been teaching people exactly how this
-            business model works — and the same strategies I used to{" "}
+            I've spent the last 2 years showing people like you everything this
+            business model involves and the strategies I've used to{" "}
             <span className="font-bold text-purple-400 px-2 py-1 rounded-lg bg-purple-400/10 border border-purple-400/20">
-              earn millions
+              make millions
             </span>{" "}
-            from it. Today, many of them are replicating these results{" "}
+            from this business and They've been able to{" "}
+            <span className="font-extrabold"> reciprocate my result</span> and
+            are now making something like this
             <span className="font-bold text-blue-400 px-2 py-1 rounded-lg bg-blue-400/10 border border-blue-400/20">
-              every single week and month
+              on a weekly/monthly basis
             </span>
             .
           </motion.p>
@@ -358,8 +408,29 @@ const Testimonials: React.FC = () => {
               </motion.div>
             </div>
 
+            <div className="flex items-center justify-center mb-16 mt-10">
+              <motion.button
+                variants={itemVariants}
+                whileHover={{ scale: 1.05, y: -3 }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative px-12 py-6 bg-[#000080] rounded-2xl text-white font-bold text-xl shadow-2xl hover:shadow-amber-500/25 transition-all duration-300 overflow-hidden"
+              >
+                <span className="relative z-10">
+                  <a
+                    href="https://chat.whatsapp.com/FAiB0gvbrloAEmX7NmsvNI"
+                    rel="noopener noreferrer"
+                  target="_blank"
+                  >
+                    Join The Training Here
+                  </a>
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+              </motion.button>
+            </div>
+
             {/* General Testimonials Carousel Controls */}
-            <button
+            {/* <button
               onClick={prevSlide}
               className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
@@ -370,9 +441,95 @@ const Testimonials: React.FC = () => {
               className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <ChevronRight size={24} />
-            </button>
+            </button> */}
           </div>
         </motion.div>
+
+        {/* Mentorship Program Section */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="mb-20"
+          data-aos="fade-up"
+          data-aos-delay="900"
+        >
+          <motion.div variants={itemVariants} className="text-center mb-16">
+            <motion.p
+              variants={itemVariants}
+              className="text-lg md:text-xl text-gray-300 max-w-5xl mx-auto leading-relaxed"
+            >
+              Today I've decided to hold{" "}
+              <span className="font-bold text-amber-400 px-2 py-1 rounded-lg bg-amber-400/10 border border-amber-400/20">
+                200 persons by hand
+              </span>
+              , show them everything this business is about so that they too can
+              use my unique system to build a profitable business that can make
+              them something like this{" "}
+              <span className="font-bold text-green-400 px-2 py-1 rounded-lg bg-green-400/10 border border-green-400/20">
+                weekly/monthly
+              </span>
+              .
+            </motion.p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
+            {mentorshipImages.map((image, index) => (
+              <motion.div
+                key={image.id}
+                variants={itemVariants}
+                whileHover={{ scale: 1.05, y: -8 }}
+                className="group relative overflow-hidden rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-amber-400/30 transition-all duration-300 shadow-2xl hover:shadow-amber-500/20"
+                data-aos="zoom-in"
+                data-aos-delay={index * 100}
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={image.imageUrl}
+                    alt={image.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <h4 className="text-lg font-bold mb-2 text-amber-400">
+                    {image.title}
+                  </h4>
+                  <p className="text-sm text-gray-300 leading-relaxed">
+                    {image.description}
+                  </p>
+                </div>
+                <div className="absolute top-4 right-4 w-8 h-8 bg-amber-400/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-amber-400/30">
+                  <span className="text-amber-400 font-bold text-sm">
+                    {index + 1}
+                  </span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        <div className="flex items-center justify-center mb-16 mt-10">
+          <motion.button
+            variants={itemVariants}
+            whileHover={{ scale: 1.05, y: -3 }}
+            whileTap={{ scale: 0.95 }}
+            className="group relative px-12 py-6 bg-[#000080] rounded-2xl text-white font-bold text-xl shadow-2xl hover:shadow-amber-500/25 transition-all duration-300 overflow-hidden"
+          >
+            <span className="relative z-10">
+              <a
+                href="https://chat.whatsapp.com/FAiB0gvbrloAEmX7NmsvNI"
+                rel="noopener noreferrer"
+              target="_blank"
+              >
+                Join The Training Here
+              </a>
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+          </motion.button>
+        </div>
 
         {/* Video Testimonials Carousel */}
         <motion.div
@@ -427,9 +584,9 @@ const Testimonials: React.FC = () => {
                             </div>
                             <div className="absolute bottom-4 left-4 right-4 text-white opacity-100 group-hover:opacity-100 transition-opacity duration-300">
                               <div className="flex items-center gap-2 mb-1">
-                              <h4 className="font-extrabold h4 mb-1">
-                                {video.title}
-                              </h4>
+                                <h4 className="font-extrabold h4 mb-1">
+                                  {video.title}
+                                </h4>
                               </div>
                               <p className="text-sm text-gray-300 mb-1 p4">
                                 {video.description}
@@ -476,7 +633,7 @@ const Testimonials: React.FC = () => {
             variants={itemVariants}
             whileHover={{ scale: 1.05, y: -3 }}
             whileTap={{ scale: 0.95 }}
-            className="group relative px-12 py-6 bg-gradient-to-r from-amber-500 to-orange-600 rounded-2xl text-white font-bold text-xl shadow-2xl hover:shadow-amber-500/25 transition-all duration-300 overflow-hidden"
+            className="group relative px-12 py-6 bg-[#000080] rounded-2xl text-white font-bold text-xl shadow-2xl hover:shadow-amber-500/25 transition-all duration-300 overflow-hidden"
           >
             <span className="relative z-10">
               <a
@@ -485,7 +642,7 @@ const Testimonials: React.FC = () => {
                 rel="noopener noreferrer"
                 className=" text-white"
               >
-                Start Your Journey
+                Join The Training Here
               </a>
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -494,6 +651,208 @@ const Testimonials: React.FC = () => {
         </motion.div>
       </div>
 
+      {/* Final CTA Section */}
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="mb-20"
+        data-aos="fade-up"
+        data-aos-delay="1200"
+      >
+        {/* First CTA */}
+        <motion.div variants={itemVariants} className="text-center mb-16 mt-14">
+          <motion.h3
+            variants={itemVariants}
+            className="text-2xl md:text-3xl font-bold text-white mb-8"
+          >
+            If you want to be part of the{" "}
+            <span className="text-amber-400">200 persons</span>
+          </motion.h3>
+          <div className="flex items-center justify-center mb-16 mt-10">
+            <motion.button
+              variants={itemVariants}
+              whileHover={{ scale: 1.05, y: -3 }}
+              whileTap={{ scale: 0.95 }}
+              className="group relative px-12 py-6 bg-[#000080] rounded-2xl text-white font-bold text-xl shadow-2xl hover:shadow-amber-500/25 transition-all duration-300 overflow-hidden"
+            >
+              <span className="relative z-10">
+                <a
+                  href="https://chat.whatsapp.com/FAiB0gvbrloAEmX7NmsvNI"
+                  rel="noopener noreferrer"
+                target="_blank"
+                >
+                  Join The Training Here
+                </a>
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+            </motion.button>
+          </div>
+        </motion.div>
+
+        {/* This isn't for everybody section */}
+        <motion.div
+          variants={itemVariants}
+          className="max-w-4xl mx-auto mb-16 mt-12"
+        >
+          <motion.h4
+            variants={itemVariants}
+            className="text-2xl md:text-3xl font-bold text-white text-center mb-12"
+          >
+            This isn't for everybody
+          </motion.h4>
+
+          {/* Animated Checklist */}
+          <div className="relative">
+            {qualificationCriteria.map((criterion, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                className="relative flex items-start space-x-4 mb-8 last:mb-0"
+                data-aos="fade-right"
+                data-aos-delay={index * 200}
+              >
+                {/* Animated Checkmark */}
+                <motion.div
+                  initial={{ scale: 0, rotate: -180 }}
+                  whileInView={{ scale: 1, rotate: 0 }}
+                  transition={{
+                    delay: index * 0.2,
+                    duration: 0.6,
+                    type: "spring",
+                    stiffness: 200,
+                  }}
+                  className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <Check size={16} className="text-white" />
+                </motion.div>
+
+                {/* Connecting Line */}
+                {index < qualificationCriteria.length - 1 && (
+                  <motion.div
+                    initial={{ height: 0 }}
+                    whileInView={{ height: "100%" }}
+                    transition={{
+                      delay: index * 0.2 + 0.3,
+                      duration: 0.5,
+                    }}
+                    className="absolute left-4 top-8 w-0.5 bg-gradient-to-b from-red-500 to-red-600 opacity-30"
+                    style={{ height: "calc(100% + 2rem)" }}
+                  />
+                )}
+
+                {/* Text Content */}
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{
+                    delay: index * 0.2 + 0.1,
+                    duration: 0.6,
+                  }}
+                  className="flex-1"
+                >
+                  <p className="text-gray-300 leading-relaxed text-lg">
+                    {criterion}
+                  </p>
+                </motion.div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Alternative Path Text */}
+        <motion.div variants={itemVariants} className="text-center mb-12">
+          <motion.p
+            variants={itemVariants}
+            className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed"
+          >
+            You can go back to scrolling FB/IG and hoping you find an
+            opportunity which doesn't require capital but If you're serious
+            about changing your financial life and making life changing money
+            like these
+          </motion.p>
+        </motion.div>
+
+        {/* Second CTA */}
+        <motion.div variants={itemVariants} className="text-center mb-16">
+          <div className="flex items-center justify-center mb-16 mt-10">
+            <motion.button
+              variants={itemVariants}
+              whileHover={{ scale: 1.05, y: -3 }}
+              whileTap={{ scale: 0.95 }}
+              className="group relative px-12 py-6 bg-[#000080] rounded-2xl text-white font-bold text-xl shadow-2xl hover:shadow-amber-500/25 transition-all duration-300 overflow-hidden"
+            >
+              <span className="relative z-10">
+                <a
+                  href="https://chat.whatsapp.com/FAiB0gvbrloAEmX7NmsvNI"
+                  rel="noopener noreferrer"
+                target="_blank"
+                >
+                  Join The Training Here
+                </a>
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+            </motion.button>
+          </div>
+        </motion.div>
+
+        {/* PS Section */}
+        <motion.div
+          variants={itemVariants}
+          className="max-w-4xl mx-auto text-center"
+        >
+          <motion.div
+            variants={itemVariants}
+            className="bg-gradient-to-br from-blue-900 via-blue-900 to-slate-900 rounded-2xl p-8 md:p-12 border border-blue-800/30 shadow-2xl"
+          >
+            <p className="text-lg md:text-xl text-gray-300 mb-6 leading-relaxed">
+              <span className="font-bold text-blue-400">PS</span> This Live
+              training begins in{" "}
+              <span className="font-bold text-amber-400 px-2 py-1 rounded-lg bg-amber-400/10 border border-amber-400/20">
+                48hrs time
+              </span>{" "}
+              and only{" "}
+              <span className="font-bold text-red-400 px-2 py-1 rounded-lg bg-red-400/10 border border-red-400/20">
+                200 persons
+              </span>{" "}
+              will be admitted into the group.
+            </p>
+
+            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+              Quickly join now to see if any slot is still available for you.
+            </p>
+
+            <p className="text-xl font-semibold text-white mb-8">
+              See you in class
+            </p>
+
+            {/* Final CTA Button */}
+            <div className="flex items-center justify-center mb-16 mt-10">
+              <motion.button
+                variants={itemVariants}
+                whileHover={{ scale: 1.05, y: -3 }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative px-12 py-6 bg-[#000080] rounded-2xl text-white font-bold text-xl shadow-2xl hover:shadow-amber-500/25 transition-all duration-300 overflow-hidden"
+              >
+                <span className="relative z-10">
+                  <a
+                    href="https://chat.whatsapp.com/FAiB0gvbrloAEmX7NmsvNI"
+                    rel="noopener noreferrer"
+                  target="_blank"
+                  >
+                    Join The Training Here
+                  </a>
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+              </motion.button>
+            </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
       {/* Video Modal */}
       {videoModalOpen && selectedVideo && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm">

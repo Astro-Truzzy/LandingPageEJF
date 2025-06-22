@@ -141,7 +141,7 @@ const Navbar: React.FC = () => {
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full text-white font-semibold shadow-lg hover:shadow-amber-500/25 transition-all duration-300 overflow-hidden"
+              className="group relative px-6 py-3 bg-[#000080] rounded-full border-1 text-white font-semibold shadow-lg hover:shadow-amber-500/25 transition-all duration-300 overflow-hidden"
             >
               <span className="relative z-10">
                 <a href="https://chat.whatsapp.com/FAiB0gvbrloAEmX7NmsvNI" target="_blank" rel="noopener noreferrer" className=" text-white">

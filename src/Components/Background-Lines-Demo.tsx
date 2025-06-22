@@ -14,7 +14,7 @@ export function BackgroundLinesDemo() {
         Esosa John Foundation
       </p>
 
-      <p className="max-w-xl mx-auto text-sm md:text-lg text-center">
+      {/* <p className="max-w-xl mx-auto text-sm md:text-lg text-center">
         The <span className="gritty-grass"> GRASS </span> to{" "}
         <span className="sparkling-gold"> GRACE </span> story, is no longer a{"   "}
         <i className=" line-through"> dream </i> with this new business model. We are here to
@@ -22,7 +22,7 @@ export function BackgroundLinesDemo() {
       </p>
       <p className="max-w-xl mx-auto text-sm md:text-lg text-center mt-4 capitalize">
         Want to know how?
-      </p>
+      </p> */}
       <BouncyArrow/>
     </BackgroundLines>
   );

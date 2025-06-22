@@ -5,56 +5,56 @@ export const charityTestimonials = [
   {
     id: 1,
     imageUrl:
-      "/Charity/IMG-20250619-WA0089.jpg",
+      "/Charity/IMG-20250619-WA0094.jpg",
     title: "Starting Out",
     description: "Charity begins her journey",
   },
   {
     id: 2,
     imageUrl:
-      "/Charity/IMG-20250619-WA0088.jpg",
+    "/Charity/IMG-20250619-WA0091.jpg",
     title: "Learning Phase",
     description: "First steps into the business",
   },
   {
     id: 3,
     imageUrl:
-      "/Charity/IMG-20250619-WA0091.jpg",
+    "/Charity/IMG-20250619-WA0092.jpg",   
     title: "Growth Period",
     description: "Building momentum",
   },
   {
     id: 4,
     imageUrl:
-      "/Charity/IMG-20250619-WA0092.jpg",
+    "/Charity/IMG-20250619-WA0093.jpg",      
     title: "Breakthrough",
     description: "First major success",
   },
   {
     id: 5,
     imageUrl:
-      "/Charity/IMG-20250619-WA0093.jpg",
+    "/Charity/IMG-20250619-WA0089.jpg", 
     title: "Scaling Up",
     description: "Expanding the business",
   },
   {
     id: 6,
     imageUrl:
-      "/Charity/IMG-20250619-WA0094.jpg",
+    "/Charity/IMG-20250619-WA0088.jpg", 
     title: "Success Milestone",
     description: "Achieving major goals",
   },
   {
     id: 7,
     imageUrl:
-      "../../public/Charity/IMG-20250619-WA0095.jpg",
+      "/Charity/IMG-20250619-WA0095.jpg",
     title: "Mentoring Others",
     description: "Giving back to community",
   },
   {
     id: 8,
     imageUrl:
-      "/Charity/IMG-20250619-WA0096.jpg",
+    "/Charity/IMG-20250619-WA0098.jpg",
     title: "Current Success",
     description: "Living the dream",
   },
@@ -68,7 +68,7 @@ export const charityTestimonials = [
   {
     id: 10,
     imageUrl:
-      "/Charity/IMG-20250619-WA0098.jpg",
+    "/Charity/IMG-20250619-WA0096.jpg", 
     title: "Current Success",
     description: "Living the dream",
   },
@@ -86,21 +86,21 @@ export const arinzeTestimonials = [
   {
     id: 1,
     imageUrl:
-      "/Arinze/IMG-20250619-WA0102.jpg",
+    "/Arinze/IMG-20250619-WA0103.jpg",
     title: "Phase 1",
     description: "Foundation building",
   },
   {
     id: 2,
     imageUrl:
-      "/Arinze/IMG-20250619-WA0103.jpg",
+    "/Arinze/IMG-20250619-WA0104.jpg",
     title: "Phase 2",
     description: "Strategy implementation",
   },
   {
     id: 3,
     imageUrl:
-      "/Arinze/IMG-20250619-WA0104.jpg",
+    "/Arinze/IMG-20250619-WA0102.jpg",  
     title: "Phase 3",
     description: "Rapid growth",
   },
@@ -111,13 +111,6 @@ export const arinzeTestimonials = [
     title: "Phase 4",
     description: "Scaling success",
   },
-  // {
-  //   id: 5,
-  //   imageUrl:
-  //     "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
-  //   title: "Phase 5",
-  //   description: "Mastery achieved",
-  // },
 ];
 
 // General testimonial images
@@ -127,58 +120,30 @@ export const generalTestimonials = [
     imageUrl:
       "/Faith/WhatsApp Image 2025-06-19 at 19.00.06_234116cb.jpg",
     name: "",
-    achievement: "$50K in 3 months",
+    achievement: "#500K in 2 months",
   },
   {
     id: 2,
-    imageUrl:
-      "/Others/WhatsApp Image 2025-06-19 at 17.52.57_9a88b9fb.jpg",
-    name: "",
-    achievement: "6-figure breakthrough",
-  },
-  {
-    id: 3,
     imageUrl:
       "/Others/WhatsApp Image 2025-06-19 at 19.00.07_287064ae.jpg",
     name: "",
     achievement: "Passive income success",
   },
-  {
-    id: 4,
-    imageUrl:
-      "/Others/WhatsApp Image 2025-06-19 at 19.00.58_6d8bf83f.jpg",
-    name: "",
-    achievement: "Business automation",
-  },
-  {
-    id: 5,
-    imageUrl:
-      "/Others/WhatsApp Image 2025-06-19 at 19.01.29_0c141c8e.jpg",
-    name: "",
-    achievement: "Multiple income streams",
-  },
-  // {
-  //   id: 6,
-  //   imageUrl:
-  //     "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
-  //   name: "John Thompson",
-  //   achievement: "Early retirement",
-  // },
-  // {
-  //   id: 7,
-  //   imageUrl:
-  //     "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
-  //   name: "Rachel Green",
-  //   achievement: "Financial freedom",
-  // },
-  // {
-  //   id: 8,
-  //   imageUrl:
-  //     "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
-  //   name: "Alex Martinez",
-  //   achievement: "Global expansion",
-  // },
-];
+//   {
+//     id: 3,
+//     imageUrl:
+//       "/Others/WhatsApp Image 2025-06-19 at 19.00.58_6d8bf83f.jpg",
+//     name: "",
+//     achievement: "Business automation",
+//   },
+//   {
+//     id: 4,
+//     imageUrl:
+//       "/Others/WhatsApp Image 2025-06-19 at 19.01.29_0c141c8e.jpg",
+//     name: "",
+//     achievement: "Multiple income streams",
+//   },
+ ];
 
 // Video testimonials
 export const videoTestimonials = [
@@ -222,45 +187,25 @@ export const videoTestimonials = [
     duration: "1:11",
     description: "Retirement fund secured",
   },
-
-//   {
-//     id: 5,
-//     thumbnailUrl:
-//       "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
-//     videoUrl:
-//       "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4", // Replace with your video URL
-//     title: "Ana's Breakthrough",
-//     duration: "3:20",
-//     description: "Single mom to business owner",
-//   },
-//   {
-//     id: 6,
-//     thumbnailUrl:
-//       "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
-//     videoUrl:
-//       "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4", // Replace with your video URL
-//     title: "Kevin's Success",
-//     duration: "4:05",
-//     description: "From debt to prosperity",
-//   },
-//   {
-//     id: 7,
-//     thumbnailUrl:
-//       "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
-//     videoUrl:
-//       "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4", // Replace with your video URL
-//     title: "Grace's Milestone",
-//     duration: "2:40",
-//     description: "Young entrepreneur success",
-//   },
-//   {
-//     id: 8,
-//     thumbnailUrl:
-//       "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
-//     videoUrl:
-//       "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4", // Replace with your video URL
-//     title: "Mark's Journey",
-//     duration: "3:15",
-//     description: "Tech professional to business owner",
-//   },
  ];
+
+ export const mentorshipImages = [
+  {
+    id: 1,
+    imageUrl: "/Others/NewSection.jpg",
+    title: "Weekly Earnings",
+    description: "#500,000 - #1,200,000 per week"
+  },
+  {
+    id: 2,
+    imageUrl: "/Others/WhatsApp Image 2025-06-19 at 19.01.29_0c141c8e.jpg",
+    title: "Monthly Earnings",
+    description: "#1,400,000 - #2,000,000 per month"
+  }
+];
+
+export const qualificationCriteria = [
+  "If you don't have at least 3 hours to spend on implementing the things you'll learn then this business isn't for you.",
+  "If you feel that every opportunity to make money online is a scam then it's not for you.",
+  "If you feel that you can't succeed even with me holding you by hand and showing you how myself and over 1200 of my students have made millions from this business then it's not for you."
+];

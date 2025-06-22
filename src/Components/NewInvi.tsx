@@ -51,16 +51,16 @@ const NewInvi: React.FC = () => {
 
   return (
     <section
-      className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"
+      className="relative min-h-screen overflow-hidden bg-gradient-to-br from-blue-700 via-blue-900 to-slate-900 py-12 flex items-center justify-center text-white"
       id="achievements"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%220.1%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] bg-repeat"></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%10Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%220.1%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] bg-repeat"></div>
       </div>
 
       {/* Gradient Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-900/20 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-transparent"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
 
       <div className="relative z-10 flex min-h-screen items-center justify-center px-4 py-12">
@@ -90,7 +90,7 @@ const NewInvi: React.FC = () => {
                 <span className="text-sm font-semibold">Proven Results</span>
               </div>
               <div className="h-4 w-px bg-white/30"></div>
-              <div className="flex items-center gap-2 text-blue-400">
+              <div className="flex items-center gap-2 text-blue-300">
                 <DollarSign size={20} />
                 <span className="text-sm font-semibold">
                   6-7 Figure Earnings
@@ -110,7 +110,7 @@ const NewInvi: React.FC = () => {
               Transform Your{" "}
               <motion.span
                 variants={highlightVariants}
-                className="bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent inline-block"
+                className="bg-gradient-to-r from-[#000080] to-blue-600 bg-clip-text text-transparent inline-block shadow-xl"
               >
                 Financial Future
               </motion.span>
@@ -133,22 +133,21 @@ const NewInvi: React.FC = () => {
                 >
                   1,200 of my mentees
                 </motion.span>{" "}
-                have gone from{" "}
+                have moved from{" "}
                 <motion.span
                   variants={highlightVariants}
-                  className="font-semibold text-red-400 underline decoration-red-400/50"
+                  className="font-semibold text-red-400 underline decoration-red-400/50 lowercase"
                 >
-                  financial uncertainty
+                  STRUGGLING FINANCIALLY
                 </motion.span>{" "}
-                and searching for legitimate income opportunities — to
-                consistently earning{" "}
+                and hoping they could find a legimate opportunity to make money
+                for themselves — to using my unique strategy to make 
                 <motion.span
                   variants={highlightVariants}
                   className="font-bold text-green-400 px-2 py-1 rounded-lg bg-green-400/10 border border-green-400/20"
                 >
-                  6–7 figures weekly or monthly
+                  6–7 figures on weekly/monthly basis.
                 </motion.span>{" "}
-                using my proven, results-driven strategy.
               </p>
             </div>
           </motion.div>
@@ -163,10 +162,17 @@ const NewInvi: React.FC = () => {
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full text-white font-bold text-lg shadow-2xl hover:shadow-amber-500/25 transition-all duration-300 overflow-hidden"
+              className="group relative px-8 py-4 bg-gradient-to-r navy rounded-full text-white font-bold text-lg shadow-2xl hover:shadow-amber-500/25 transition-all duration-300 overflow-hidden"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Start Your Transformation
+                <a
+                  href="https://chat.whatsapp.com/FAiB0gvbrloAEmX7NmsvNI"
+                  className="no-underline text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Start Your Transformation
+                </a>
                 <motion.div
                   animate={{ x: [0, 5, 0] }}
                   transition={{ repeat: Infinity, duration: 1.5 }}
@@ -182,7 +188,13 @@ const NewInvi: React.FC = () => {
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 border-2 border-white/30 rounded-full text-white font-semibold text-lg hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm"
             >
-              <a href="#testimonials" className="no-underline text-white ref">View Success Stories</a>
+              <a 
+              href="#testimonials" 
+              className="no-underline text-white ref"
+              rel="noopener noreferrer"
+              >
+                View Success Stories
+              </a>
             </motion.button>
           </motion.div>
 
