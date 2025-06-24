@@ -9,17 +9,17 @@ import ScrollToTop from './Components/ScrollToTop';
 
 AOS.init();
 
-//function App() {
-  //return (
-  // <>
-  // <Navbar/>
-  // <HeroSection/>
-  // <NewInvi/>
-  // <Testimonials/>
- //  <ScrollToTop/>
-  //<Footer/>
+function App() {
+ return (
+   <>
+   <Navbar/>
+   <HeroSection/>
+   <NewInvi/>
+   <Testimonials/>
+   <ScrollToTop/>
+  <Footer/>
    </>
   );
-}
+};
 
 export default App;
