@@ -1,9 +1,9 @@
 // src/components/Hero.tsx
-"use client";
-import { BackgroundLinesDemo } from "./Background-Lines-Demo";
+//"use client";
+//import { BackgroundLinesDemo } from "./Background-Lines-Demo";
 
 
-export default function Hero() {
+//export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-black" id="home">
       {/* Gradient overlay or animation could go here */}
@@ -12,4 +12,4 @@ export default function Hero() {
       </div>
     </section>
   );
-}
+//}
